@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+#demo {font-size:15px; color:red}
+#demo2 {font-size:15px; color:red}
+button { color:brown; background-color: yellow}
+</style>
+</head>
+<body>
+
+<input type="text" id="myText" value="">
+<input type="text" id="myText2" value="">
+
+Input numbers above & Click the buttons below.
+
+<button onclick="myFunction()">MULTIPLY</button>
+
+" Multiplication result"
+
+<button onclick="myFunction2()">DIVIDE</button>
+
+" Division result"
+<p id="demo"></p>
+<p id="demo2"></p>
+
+
+<script>
+var x = document.getElementById("myText").value;
+var y = document.getElementById("myText2").value;
+function myFunction() {
+document.getElementById("demo").innerHTML = (x*y);
+}
+
+function myFunction2() {
+document.getElementById("demo2").innerHTML = ((x/y).toFixed(2));
+}
+</script>
+
+</body>
+</html>
